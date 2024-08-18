@@ -2,20 +2,29 @@
 <html lang="en">
     <head>
         <title>FAQ Page｜Cenere</title>
+
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="../style.css" media="screen, handheld">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <meta name="Content-Language" content="en">
         <meta name="author" content="@CenereRoses">
-        <meta name="KeyWords" content="Ashterisk, Video Games, Gaming, Fangame, YouTuber, Gamer">
-        <meta name="Description" content="Frequently Asked Questions">
-        <!--Google Font API-->
+        <meta name="KeyWords" content="CenereRoses, VTuber, Designer, Artist, Writer, Programmer, YouTuber, Gamer">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend">
+        <title>CenereRoses</title>
+        <meta name="description" content="CenereRoses, VTuber, Designer, Artist, Writer, Programmer; etc. etc.">
+        <meta name="framer-search-index" content="https://framerusercontent.com/sites/5yMkgsjeSDwgoFjWT0UmBY/searchIndex-8xYWCxY8Jt0Z.json">
+        <link rel="icon" href="https://framerusercontent.com/sites/icons/default-favicon.v3.png">
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="CenereRoses">
+        <meta property="og:description" content="CenereRoses, VTuber, Designer, Artist, Writer, Programmer; etc. etc.">
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="CenereRoses">
+        <meta name="twitter:description" content="CenereRoses, VTuber, Designer, Artist, Writer, Programmer; etc. etc.">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com" rel="preconnect" crossorigin>
         <style> 
             :root {
                 --heading5: clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem);
@@ -253,16 +262,20 @@
 
             // Fetch FAQ data from external file
             fetch('data/faq-data.json')
-                .then(response => response.json())
-                .then(data => {
-                    faqData = data; // Assign data to the global variable
-                    // Initial display of FAQ items
-                    displayFAQ(faqData);
+            .then(response => {
+                console.log('Response status:', response.status);
+                return response.json();
+            })
+            .then(data => {
+                faqData = data; // Assign data to the global variable
+                // Initial display of FAQ items
+                displayFAQ(faqData);
 
-                    // Attach search event listener
-                    document.getElementById("search-bar").addEventListener("input", handleSearch);
-                })
-                .catch(error => console.error('Error fetching FAQ data:', error));
+                // Attach search event listener
+                document.getElementById("search-bar").addEventListener("input", handleSearch);
+                console.log(data)
+            })
+            .catch(error => console.error('Error fetching FAQ data:', error));
         </script>
     </body>
 </html>
