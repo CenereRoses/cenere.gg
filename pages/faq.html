@@ -77,19 +77,19 @@
             }
 
             // Fetch FAQ data from external file
-            fetch('.\data\faq-data.json')
+            fetch('../data/faq-data.json')
             .then(response => {
                 console.log('Response status:', response.status);
                 return response.json();
             })
             .then(data => {
+                console.log(data)
                 faqData = data; // Assign data to the global variable
                 // Initial display of FAQ items
                 displayFAQ(faqData);
 
                 // Attach search event listener
                 document.getElementById("search-bar").addEventListener("input", handleSearch);
-                console.log(data)
             })
             .catch(error => console.error('Error fetching FAQ data:', error));
         </script>
