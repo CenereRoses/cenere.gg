@@ -252,7 +252,7 @@
             }
 
             // Fetch FAQ data from external file
-            fetch('data\faq-data.json')
+            fetch('data/faq-data.json')
                 .then(response => response.json())
                 .then(data => {
                     faqData = data; // Assign data to the global variable
@@ -263,7 +263,6 @@
                     document.getElementById("search-bar").addEventListener("input", handleSearch);
                 })
                 .catch(error => console.error('Error fetching FAQ data:', error));
-
         </script>
     </body>
 </html>
