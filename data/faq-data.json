@@ -1,0 +1,38 @@
+[
+    {
+        "question": "What is types of content do you make?",
+        "answer": "A lot of kinds! But to answer more specifically, I do Gaming, Docu-Series/Documentaries, Responses, Reviews, Game Development, Animation, and Art/Graphics."
+    },
+    {
+        "question": "How often do you upload new videos?",
+        "answer": "I juggle various interests, but I try to focus on simpler content due to time constraints from my day job. No fixed schedule now, but aiming to pursue this full-time in the future!"
+    },
+    {
+        "question": "How can I support your channel?",
+        "answer": "For no-cost support, you can simply subscribe to any of my Channels, like/share any of my content or posts, or just send me kind messages! If you wish, you can also join my <a href='https://www.patreon.com/ashterisk'>Patreon</a> where I will be focusing my public content updates for free! If you wish to support me fiscally in any way, you can support me by starting a Membership on Patreon, Supporting on Discord, donating on <a href='https://ko-fi.com/P5P2BC5XU'>Ko-fi</a>, funding specific items on Throne, or sending me food or snacks on my streams with Treatstream!"
+    },
+    {
+        "question": "Can I request specific video topics or content?",
+        "answer": "You can submit ideas for content by becoming a Supporter on Discord! Otherwise, ideas will be determined by a combination of my desires and audience feedback. Please understand that this is a consequence of my mental illnesses and disabilities, and that I want to hear each and every recommendation if I am able."
+    },
+    {
+        "question": "Can I use your videos in my own content with proper credit?",
+        "answer": "Of course! Clipping or reposting is perfectly fine; feel free to clip or repost my content, but please avoid manipulating edits to misrepresent me or my work. I'm committed to avoiding harm, and I'll apologize if genuinely wrong, but I'll also address any misrepresentation."
+    },
+    {
+        "question": "How do I contact you for business inquiries or collaboration opportunities?",
+        "answer": "You can dm me on Insta, Twitter or Discord, or send me an Email!"
+    },
+    {
+        "question": "Do you have any merchandise available for purchase?",
+        "answer": "Not yet, sadly.<br>If/When demand is high enough, I plan on designing and launching merch, but it wouldn't be sustainable at this time."
+    },
+    {
+        "question": "What equipment do you use to create your videos?",
+        "answer": "All equipment used can be found compiled on my Throne Storefront, where you can view what exact product I chose! You can also find other lists there, like lists for Cosplay Items, products I'd recommend, or just general cool stuff I wanted to share!"
+    },
+    {
+        "question": "How do you edit and produce your videos?",
+        "answer": "For Editing, I currently use Hitfilm Pro.<br>I use OBS Studio for recording, as well as several plugins:</p><table><thead><tr><th>Effects</th><th>Transform</th><th>Transitions</th><th>Sources</th><th>Utilities</th></tr></thead><tbody><tr><td>Browser Transition</td><td>3D Effect</td><td>Downstream Keyer</td><td>Source Clone</td><td>Media Controls</td></tr><tr><td>Freeze Filter</td><td>Move</td><td>Source</td><td>Record</td><td>Replay Source</td></tr><tr><td>Gradient Source</td><td> </td><td>Waveform</td><td>Source Switcher</td><td>Scene Collection Manager</td></tr><tr><td>Recursion</td><td>Shader Filter</td><td> </td><td> </td><td>Spout2</td></tr><tr><td>Time Warp</td><td> </td><td> </td><td> </td><td>Transition Table</td></tr><tr><td> </td><td> </td><td> </td><td> </td><td>Scene Notes</td></tr></tbody></table>"
+    }
+]  
