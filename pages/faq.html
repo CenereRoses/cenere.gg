@@ -69,8 +69,8 @@
                 const searchTerm = document.getElementById("search-bar").value.toLowerCase();
 
                 const filteredData = faqData.filter(item =>
-                    item.question.toLowerCase().includes(searchTerm) ||
-                    item.answer.toLowerCase().includes(searchTerm)
+                    item.question.match(new RegExp(searchTerm, 'i')) ||
+                    item.answer.match(new RegExp(searchTerm, 'i'))
                 );
 
                 displayFAQ(filteredData);
