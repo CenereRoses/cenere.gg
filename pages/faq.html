@@ -4,7 +4,7 @@
         <title>FAQ Page｜Cenere</title>
 
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="style.css" media="screen, handheld">
+        <link rel="stylesheet" type="text/css" href="../style.css" media="screen, handheld">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <meta name="Content-Language" content="en">
@@ -25,190 +25,6 @@
         <meta name="twitter:description" content="CenereRoses, VTuber, Designer, Artist, Writer, Programmer; etc. etc.">
 
         <link href="https://fonts.googleapis.com" rel="preconnect" crossorigin>
-        <style> 
-            :root {
-                --heading5: clamp(0.875rem, 0.739rem + 0.68vw, 1.25rem);
-            }
-
-            * {
-                border-color: #ff2a2a38;
-                padding: 10px;
-            } html, hr, form, i {padding:0}
-
-            html {
-                background-color: rgba(0, 0, 0, 0.5);
-            }
-            body {
-                font-family: 'Lexend', sans-serif;
-                font-style: italic;
-                font-weight: 200;
-            }
-            div {
-                margin: auto;
-                padding: 0.5%;
-                max-width: none;
-            }
-            h4 {
-                letter-spacing: normal;
-                font-size: x-large;
-            }
-            h5 {
-                text-transform: initial;
-                font-size: var(--heading5);
-                letter-spacing: normal;
-                font-style: normal;
-                padding: 4% 2% 1% 2%;
-            }
-            h5, p {
-                text-align: left;
-            }
-            hr {
-                border-style: groove;
-                margin: 1em;
-            }
-            
-            #faq {
-                width: clamp(15rem, -1.364rem + 81.82vw, 60rem);
-                margin-top: 1em;
-                margin-bottom: 1em;
-                padding: inherit;
-            }
-            li {
-                list-style: none;
-            }
-
-            #search-bar {
-                padding: 10px;
-                min-width: 65%;
-                width: 2em;
-                height: 2em;
-                background: none;
-                border: 4px solid #ff2e5e;
-                border-radius: 50px;
-                box-sizing: border-box;
-                font-size: 26px;
-                color: #ff2e5e;
-                outline: none;
-                transition: .5s;
-            }
-
-            .search-box {
-                height: 3.3em;
-                padding: 1%;
-            }
-            .search-box:hover > form > input {
-                width: 350px !important;
-                background: black !important;
-                border-radius: 10px !important;
-            }
-            .search-box i {
-                position: relative;
-                top: -27px;
-                left: 27%;
-                transform: translate(-50%,-50%);
-                font-size: 26px;
-                color: #ff1b50;
-                transition: opacity 0.2s, z-index 0.2s;
-            }
-            .search-box form:hover i {
-                opacity: 0;
-                z-index: -1;
-            }
-
-            /* Show search icon when there is no text */
-            .search-box form:not(:hover) i {
-                opacity: 1;
-                z-index: 1;
-            }
-
-            label {display: none; font-family: var(--p-fam);}
-
-            table {
-                border-spacing: 0;
-            }
-            th {
-                background-color: #ff859986;
-                padding: 0.25rem 0.34375rem;
-                font-weight: bolder;
-            }
-
-            th, td {
-                text-align: center;
-                border: solid 1px #FF859A;
-                font-size: smaller;
-            }
-
-            .container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                align-items: flex-start;
-                margin: auto;
-            }
-            #faq-search {
-                max-width: 35rem;
-                margin: auto;
-                padding: 2em;
-                border: 1px solid rgba(0, 0, 0, 0.4);
-                border-radius: 5px;
-                background-color: rgba(0, 0, 0, 0.5);
-                box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-            }
-
-            .question li:before {
-                content: counter(item, upper-roman);
-                padding: 0.5vw;
-                display: block;
-                height: 100%;
-            }
-            .question {
-                display: flex;
-            }
-            .question li {
-                position: relative;
-                padding-left: 20px; /* Adjust the space for the marker */
-            }
-            .question li::before {
-                content: ''; /* Add content to the ::before pseudo-element */
-                position: absolute;
-                width: 10px; /* Set the width of the marker */
-                background-color: rgba(0, 0, 0, 0.5); /* Set the background color */
-                border-radius: 5px; /* Set the border-radius for rounded corners */
-            }
-            .answer {
-                display: none;
-                align-items: center;
-                flex-direction: column;
-                padding: 0;
-                border: 1px solid rgba(0, 0, 0, 0.4);
-                border-radius: 5px;
-                background-color: rgba(0, 0, 0, 0.5);
-                margin-left: 1.3vw;
-                box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-            }
-
-            .answer li {
-                padding: 0;
-            }
-
-            .collapsible-input, .collapsible-content {
-                display: none;
-            }
-            .collapsible-label {
-                cursor: pointer;
-            }
-            .collapsible-content {
-                padding: 10px;
-                border: 1px solid #db3434;
-                overflow: hidden;
-            }
-            .collapsible-input:checked + .collapsible-label + .collapsible-content {
-                display: inline-block;
-            }
-
-            /* Slide out animation for answers, unsquish from top? */
-
-        </style>
     </head>
     <body>
         <div id="faq-search">
@@ -261,7 +77,7 @@
             }
 
             // Fetch FAQ data from external file
-            fetch('data/faq-data.json')
+            fetch('.\data\faq-data.json')
             .then(response => {
                 console.log('Response status:', response.status);
                 return response.json();
